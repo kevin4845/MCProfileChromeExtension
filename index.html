@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>MC Profile</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <div class="header">
+
+        <img
+            class="logo"
+            src="logo.png"
+            alt="Minecraft"
+        >
+
+        <div>
+            <h1 class="title">
+                MC Profile
+            </h1>
+
+            <div class="subtitle">
+                Account information
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- CONTENT -->
+
+    <div class="content">
+
+        <!-- LOGIN VIEW -->
+
+        <div
+            id="loginView"
+            class="login-card"
+        >
+
+            <div class="login-icon">
+                🔐
+            </div>
+
+            <h2 class="login-title">
+                Log in to Minecraft
+            </h2>
+
+            <p class="login-text">
+                Log in to your Minecraft account on
+                minecraft.net to view your account
+                information.
+            </p>
+
+            <button
+                id="loginButton"
+                class="login-button"
+            >
+                Open Minecraft
+            </button>
+
+            <div class="hint">
+                After logging in, open this extension again.
+            </div>
+
+        </div>
+
+
+        <!-- ACCOUNT VIEW -->
+
+        <div
+            id="accountView"
+            style="display: none;"
+        >
+
+            <!-- ACCOUNT CARD -->
+
+            <div class="account-card">
+
+                <div class="account-header">
+
+                    <div class="account-info">
+
+                        <div class="username-label">
+                            Minecraft Username
+                        </div>
+
+                        <div
+                            id="username"
+                            class="username"
+                        >
+                            -
+                        </div>
+
+                    </div>
+
+
+                    <!-- SKIN -->
+
+                    <img
+                        id="skinPreview"
+                        class="skin-preview"
+                        alt="Minecraft Skin"
+                    >
+
+                </div>
+
+
+                <div class="divider"></div>
+
+
+                <div class="username-label">
+                    Account Created
+                </div>
+
+                <div
+                    id="creationDate"
+                    class="creation-date"
+                >
+                    -
+                </div>
+
+                <div
+                    id="accountAge"
+                    class="account-age"
+                >
+                    -
+                </div>
+
+            </div>
+
+
+            <!-- CACHE -->
+
+            <div class="cache-status">
+
+                <span id="cacheStatus">
+                    -
+                </span>
+
+                <button
+                    id="refreshButton"
+                >
+                    Refresh
+                </button>
+
+            </div>
+
+
+            <!-- STATS -->
+
+            <div class="stats">
+
+                <div class="stat">
+
+                    <div class="stat-label">
+                        Account Age
+                    </div>
+
+                    <div
+                        id="ageDetailed"
+                        class="stat-value"
+                    >
+                        -
+                    </div>
+
+                </div>
+
+
+                <div class="stat">
+
+                    <div class="stat-label">
+                        Days Old
+                    </div>
+
+                    <div
+                        id="daysOld"
+                        class="stat-value"
+                    >
+                        -
+                    </div>
+
+                </div>
+
+
+                <div class="stat">
+
+                    <div class="stat-label">
+                        Username Age
+                    </div>
+
+                    <div
+                        id="usernameAge"
+                        class="stat-value"
+                    >
+                        -
+                    </div>
+
+                </div>
+
+
+                <div class="stat">
+
+                    <div class="stat-label">
+                        Capes
+                    </div>
+
+                    <div
+                        id="capeCount"
+                        class="stat-value"
+                    >
+                        -
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CAPES -->
+
+            <div class="capes">
+
+                <div class="section-label">
+                    Cape Collection
+                </div>
+
+                <div
+                    id="capeList"
+                    class="cape-list"
+                ></div>
+
+            </div>
+
+
+            <!-- UUID -->
+
+            <div
+                id="uuid"
+                class="uuid"
+                title="Click to copy UUID"
+            >
+                -
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <div class="footer">
+        Minecraft Account Creation Date Finder
+    </div>
+
+
+    <script src="popup.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "MC Profile",
+  "version": "1.0.0",
+  "description": "Find out when your Minecraft account was created.",
+  "permissions": [
+    "cookies",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://minecraft.net/*",
+    "https://*.minecraft.net/*",
+    "https://api.minecraftservices.com/*",
+    "https://mineskin.eu/*"
+  ],
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "128": "logo.png"
+    }
+  },
+  "icons": {
+    "128": "logo.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; img-src 'self' data: https://mineskin.eu"
+  }
+}
